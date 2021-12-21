@@ -160,21 +160,11 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/pn553                                                      0660 nfc nfc
 
 # LED class devices
-/sys/class/leds/red      delay_on     0644    system    system
-/sys/class/leds/red      delay_off    0644    system    system
-/sys/class/leds/red      breath       0644    system    system
-/sys/class/leds/red      brightness   0644    system    system
-/sys/class/leds/red      trigger      0644    system    system
-/sys/class/leds/green    delay_on     0644    system    system
-/sys/class/leds/green    delay_off    0644    system    system
-/sys/class/leds/green    breath       0644    system    system
-/sys/class/leds/green    brightness   0644    system    system
-/sys/class/leds/green    trigger      0644    system    system
-/sys/class/leds/blue     delay_on     0644    system    system
-/sys/class/leds/blue     delay_off    0644    system    system
-/sys/class/leds/blue     breath       0644    system    system
-/sys/class/leds/blue     brightness   0644    system    system
-/sys/class/leds/blue     trigger      0644    system    system
+/sys/class/leds/{red,green,blue}      delay_on     0644    system    system
+/sys/class/leds/{red,green,blue}      delay_off    0644    system    system
+/sys/class/leds/{red,green,blue}      breath       0644    system    system
+/sys/class/leds/{red,green,blue}      brightness   0644    system    system
+/sys/class/leds/{red,green,blue}      trigger      0644    system    system
 
 /sys/class/leds/vibrator activate         0644    system    system
 /sys/class/leds/vibrator brightness       0644    system    system
